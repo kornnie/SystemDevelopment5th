@@ -5,13 +5,16 @@ Test suite for the Calculator class.
 import pytest
 from calculator.calculator import Calculator, InvalidInputException
 
+
 @pytest.fixture
 def calc():
     """Fixture to create a Calculator instance for tests."""
     return Calculator()
 
+
 TEST_MAX_VALUE = Calculator.MAX_VALUE
 TEST_MIN_VALUE = Calculator.MIN_VALUE
+
 
 class TestAddition:
     """Tests for the add method."""
@@ -226,6 +229,7 @@ class TestAddition:
 
         # Assert
         assert result == expected
+
 
 class TestSubtraction:
     """Tests for the subtract method."""
